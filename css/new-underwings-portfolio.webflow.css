@@ -2581,6 +2581,7 @@ blockquote {
 }
 
 .section-wrapper.glow-3 {
+  height: 100vh;
   background-image: radial-gradient(circle farthest-side at 50% 150%, rgba(68, 84, 254, .1), rgba(68, 84, 254, 0) 75%);
 }
 
@@ -2637,8 +2638,8 @@ blockquote {
 }
 
 .spline-scene {
-  width: 100%;
-  height: 100vh;
+  width: auto;
+  height: 100%;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   justify-content: center;
@@ -2731,6 +2732,11 @@ blockquote {
   font-size: 28px;
 }
 
+.div-block-8 {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (min-width: 1280px) {
   .body {
     background-color: var(--dark);
@@ -2777,12 +2783,18 @@ blockquote {
   }
 
   .spline-scene {
-    height: 100vh;
+    width: auto;
+    height: 100%;
   }
 
   .grid-10 {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .div-block-8 {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -2822,7 +2834,7 @@ blockquote {
 
   .spline-scene {
     width: auto;
-    height: 100vh;
+    height: 100%;
   }
 
   .grid-11 {
@@ -2845,6 +2857,10 @@ blockquote {
     background-image: none;
   }
 
+  .hero-background.about-background {
+    background-image: url('../images/iPad-Pro-with--iPhone-Mockup-05-1.png');
+  }
+
   .section-container.hero {
     justify-content: center;
     align-items: center;
@@ -2854,6 +2870,12 @@ blockquote {
 
   .spline-scene {
     height: 100vh;
+  }
+
+  .div-block-8 {
+    align-self: center;
+    align-items: center;
+    display: flex;
   }
 }
 
@@ -3235,6 +3257,24 @@ blockquote {
     padding-bottom: 48px;
   }
 
+  .hero-background.projects-background {
+    background-image: url('../images/iPad-Pro-with--iPhone-Mockup-05-1.png');
+  }
+
+  .grid-2 {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .div-block-2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 0;
+    display: block;
+  }
+
   .hero-content-conatiner {
     max-width: 500px;
     flex: 0 auto;
@@ -3253,6 +3293,7 @@ blockquote {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
     display: block;
   }
 
@@ -3260,6 +3301,7 @@ blockquote {
     height: 100vh;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -3270,7 +3312,7 @@ blockquote {
 
   .spline-scene {
     width: auto;
-    height: auto;
+    height: 100%;
   }
 
   .circle-2 {
@@ -3281,6 +3323,20 @@ blockquote {
 
   .rotating-circles-2 {
     min-height: 300px;
+  }
+
+  .grid-11 {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .div-block-8 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .heading-7 {
+    font-size: 32px;
   }
 }
 
@@ -3560,13 +3616,17 @@ blockquote {
   .hero-content-conatiner {
     max-width: 470px;
     grid-row-gap: 16px;
-    margin-top: 56px;
+    margin-top: 0;
     padding-top: 0;
   }
 
   .hero-paragraph {
     margin-bottom: 20px;
     font-size: 14px;
+  }
+
+  .section-wrapper.glow-3 {
+    padding-top: 0;
   }
 
   .button-content {
@@ -3579,8 +3639,8 @@ blockquote {
   }
 
   .section-container.hero {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .button-1 {
@@ -3588,7 +3648,7 @@ blockquote {
   }
 
   .spline-scene {
-    display: none;
+    display: block;
   }
 
   .circle-2 {
@@ -3602,6 +3662,10 @@ blockquote {
     border-left-style: none;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .div-block-8 {
+    display: none;
   }
 }
 
@@ -3916,6 +3980,8 @@ blockquote {
   }
 
   .div-block-2 {
+    margin-top: 0;
+    margin-bottom: 0;
     padding-top: 100px;
   }
 
@@ -3954,6 +4020,10 @@ blockquote {
     float: none;
     display: none;
     position: static;
+  }
+
+  .div-block-8 {
+    display: none;
   }
 }
 
@@ -4190,6 +4260,10 @@ blockquote {
 #w-node-f102475f-9c86-c40d-35cc-ab80513d9601-f7a0645d {
   grid-area: span 1 / span 2 / span 1 / span 2;
   align-self: center;
+}
+
+#w-node-_9e0572e7-153b-131f-f09e-0494de952c5c-f7a0645d {
+  grid-area: span 1 / span 2 / span 1 / span 2;
 }
 
 #w-node-_9f53a181-79b7-5e80-2d5b-494e4b0a921c-f7a0645d {
